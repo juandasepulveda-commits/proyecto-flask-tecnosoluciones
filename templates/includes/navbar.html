@@ -1,0 +1,5 @@
+<nav class="navegacion">
+    <a href="{{ url_for('index') }}" class="{{ 'activo' if request.endpoint == 'index' }}">Inicio</a>
+    <a href="{{ url_for('servicios') }}" class="{{ 'activo' if request.endpoint == 'servicios' }}">Servicios</a>
+    <a href="{{ url_for('contacto') }}" class="{{ 'activo' if request.endpoint == 'contacto' }}">Contacto</a>
+</nav>

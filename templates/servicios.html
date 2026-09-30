@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block content %}
+<h2>Nuestros servicios</h2>
+<section class="tarjetas">
+    {% for servicio in servicios %}
+    <article class="tarjeta">
+        <h3>{{ servicio.nombre }}</h3>
+        <p>{{ servicio.descripcion }}</p>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

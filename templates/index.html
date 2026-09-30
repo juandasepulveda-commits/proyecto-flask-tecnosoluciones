@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h2>Bienvenido a TecnoSoluciones</h2>
+    <p>Ayudamos a pequeños negocios y emprendedores a modernizar sus procesos con desarrollo web, automatización y análisis de datos.</p>
+    <a class="boton" href="{{ url_for('servicios') }}">Ver servicios</a>
+</section>
+
+<section class="tarjetas">
+    <article class="tarjeta">
+        <h3>Modular</h3>
+        <p>Este sitio usa una plantilla base y secciones reutilizables con Jinja2.</p>
+    </article>
+    <article class="tarjeta">
+        <h3>Sencillo</h3>
+        <p>Navegación clara entre Inicio, Servicios y Contacto.</p>
+    </article>
+    <article class="tarjeta">
+        <h3>Escalable</h3>
+        <p>Construido con Flask, fácil de ampliar con nuevas páginas.</p>
+    </article>
+</section>
+{% endblock %}
